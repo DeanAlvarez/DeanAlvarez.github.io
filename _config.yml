@@ -21,7 +21,7 @@ repository               : "DeanAlvarez/DeanAlvarez.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : # "profile.png"
+  avatar           : "profile.png"
   name             : "Dean E. Alvarez"
   pronouns         : "he/him"  
   bio              : "CS PhD student @ UIUC"
