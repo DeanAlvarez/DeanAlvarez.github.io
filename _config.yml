@@ -83,6 +83,8 @@ publication_category:
     title: 'Conference Papers'
   preprint:
     title: 'Preprints'
+  demo/posters:
+    title: "Demos and Posters"
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
