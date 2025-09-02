@@ -26,7 +26,7 @@ author:
   pronouns         : "he/him"  
   bio              : "CS PhD student @ UIUC"
   location         : "Illinois, US"
-  employer         : "University of Illinois: Urbana-Champaign"
+  employer         : # Company Name
   uri              : # URL
   email            : # "none@example.org" 
 
