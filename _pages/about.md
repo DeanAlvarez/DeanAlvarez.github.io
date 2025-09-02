@@ -25,6 +25,7 @@ I believe that the future of information access lies in **structured understandi
 <h4>NSF GRFP Fellow</h4>
 <p>Spring 2025 - Supporting my research on "New Generation of Information Access via Intelligent Assistant"</p>
 </div>
+</div>
 
 ## Beyond Research
 
