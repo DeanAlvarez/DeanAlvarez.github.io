@@ -15,7 +15,7 @@ redirect_from:
 
 **Ph.D. in Computer Science**, University of Illinois Urbana-Champaign  
 *Expected May 2029*  
-*Advisor: Prof. Cheng Xiang Zhai*
+*Advisor: Prof. ChengXiang Zhai*
 
 **B.S. in Computer Science**, Cornell University  
 *May 2023*  
@@ -28,7 +28,7 @@ redirect_from:
 
 **Research Assistant**, University of Illinois Urbana-Champaign  
 *January 2024 - Present*  
-*Advisor: Professor Cheng Xiang Zhai*  
+*Advisor: Professor ChengXiang Zhai*  
 *Project: "Hypergraph of Text for Structuring Document Collections"*
 
 
