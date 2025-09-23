@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a Ph.D. student at the University of Illinois: Urbana-Champaign advised by Professor [ChengXiang Zhai](https://czhai.cs.illinois.edu/). My research centers on **Information Organization and Access**. More specifically, I have focused on using ML, NLP, and IR techniques to transform unstructured text collections into meaningful graphical structures. My recent work has focused on the Hypergraph of Text data structure. 
+I'm a Ph.D. student at the University of Illinois: Urbana-Champaign advised by Professor [ChengXiang Zhai](https://czhai.cs.illinois.edu/). My research centers on **Information Organization and Access**. More specifically, I have focused on using ML, NLP, and IR techniques to transform unstructured text collections into meaningful graph-based structures. My recent work has focused on the Hypergraph of Text data structure. 
 
 <!-- ## Research Vision
 
@@ -35,5 +35,5 @@ Outside of research I enjoy reading, philosophy, listening to music, and strateg
 
 <div class="cta-section">
 <h3>Learn More</h3>
-<p>Interested in collaborating or learning more about my work? Check out my <a href="https://scholar.google.com/citations?user=WCSG8bwAAAAJ&hl=en">Google Scholar</a> for publications, or explore my <a href="/background/">Background</a> for a complete overview of my academic journey.</p>
+<p>Interested in collaborating or learning more about my work? Check out my <a href="https://scholar.google.com/citations?user=WCSG8bwAAAAJ&hl=en">Google Scholar</a> for publications, or explore my <a href="/background/">Background</a> for a complete overview of my journey.</p>
 </div>
