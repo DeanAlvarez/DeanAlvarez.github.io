@@ -6,7 +6,7 @@ permalink: /publication/STAT-shrinking-transformers-after-training
 excerpt: 'We present STAT: a simple algorithm to prune transformer models without any fine-tuning. STAT eliminates both attention heads and neurons from the network, while preserving accuracy by calculating a correction to the weights of the next layer.'
 date: 2024-05-29
 authors: 'Megan Flynn, Alexander Wang, Dean E. Alvarez, Christopher De Sa, Anil Damle'
-venue: 'arXiv'
+venue: 'arXiv preprint'
 paperurl: 'https://arxiv.org/pdf/2406.00061'
 citation: 'STAT: Shrinking Transformers After Training. M Flynn, A Wang, DE Alvarez, C De Sa, A Damle - arXiv preprint arXiv:2406.00061, 2024'
 ---

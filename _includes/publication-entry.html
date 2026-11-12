@@ -3,10 +3,5 @@
 <li class="pub">
   <a class="pub-title" href="{{ pub.url | relative_url }}">{{ pub.title }}</a>
   {% if pub.authors %}<div class="pub-authors">{{ pub.authors | replace: site.author.short_name, me }}</div>{% endif %}
-  <div class="pub-meta">
-    {% if pub.venue %}<span class="pub-venue">{{ pub.venue }}</span>{% endif %}
-    {% if pub.paperurl %}<a href="{{ pub.paperurl }}">Paper</a>{% endif %}
-    {% if pub.codeurl %}<a href="{{ pub.codeurl }}">Code</a>{% endif %}
-    {% if pub.slidesurl %}<a href="{{ pub.slidesurl }}">Slides</a>{% endif %}
-  </div>
+  <div class="pub-meta">{% include publication-meta.html pub=pub %}</div>
 </li>

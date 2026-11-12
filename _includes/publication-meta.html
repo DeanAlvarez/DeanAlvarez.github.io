@@ -1,0 +1,8 @@
+{% comment %}Venue, year (unless the venue already names one, e.g. "SIGIR 2025"), tags, and links.{% endcomment %}
+{% assign pub = include.pub %}
+{% assign year = pub.date | date: '%Y' %}
+{% if pub.venue %}<span class="pub-venue">{{ pub.venue }}{% unless pub.venue contains '20' %}, {{ year }}{% endunless %}</span>{% endif %}
+{% for tag in pub.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+{% if pub.paperurl %}<a href="{{ pub.paperurl }}">Paper</a>{% endif %}
+{% if pub.codeurl %}<a href="{{ pub.codeurl }}">Code</a>{% endif %}
+{% if pub.slidesurl %}<a href="{{ pub.slidesurl }}">Slides</a>{% endif %}

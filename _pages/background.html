@@ -1,0 +1,34 @@
+---
+title: Background
+permalink: /background/
+redirect_from:
+  - /resume
+  - /cv
+---
+<nav class="toc" aria-label="Sections">
+  {% for s in site.data.cv %}<a href="#{{ s.section | slugify }}">{{ s.section }}</a>{% endfor %}
+  <a href="{{ '/publications/' | relative_url }}">Publications →</a>
+</nav>
+
+{% for s in site.data.cv %}
+<section class="cv-section{% if s.compact %} cv-compact{% endif %}" id="{{ s.section | slugify }}">
+  <h2>{{ s.section }}</h2>
+  {% for e in s.entries %}
+  <div class="cv-entry">
+    <div class="cv-head">
+      <span class="cv-title">{{ e.title | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span>
+      {% if e.when %}<span class="cv-when">{{ e.when }}</span>{% endif %}
+    </div>
+    {% if e.org or e.where %}
+    <div class="cv-org">{{ e.org }}{% if e.org and e.where %} · {% endif %}{{ e.where }}</div>
+    {% endif %}
+    {% if e.note %}<div class="cv-note">{{ e.note | markdownify | remove: '<p>' | remove: '</p>' | strip }}</div>{% endif %}
+    {% if e.bullets %}
+    <ul>
+      {% for b in e.bullets %}<li>{{ b | markdownify | remove: '<p>' | remove: '</p>' | strip }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+  {% endfor %}
+</section>
+{% endfor %}

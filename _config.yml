@@ -2,8 +2,8 @@
 
 title: Dean E. Alvarez
 description: >-
-  CS PhD student at UIUC working on information organization and access:
-  turning unstructured text collections into graph-based structures.
+  CS PhD candidate at UIUC studying how to make any document collection
+  navigable, using Hypergraph of Text.
 url: https://deanalvarez.github.io
 baseurl: ""
 lang: en-US
@@ -12,7 +12,7 @@ timezone: America/Chicago
 author:
   name: Dean E. Alvarez
   pronouns: he/him
-  bio: CS PhD student @ UIUC
+  bio: CS PhD candidate @ UIUC
   location: Illinois, US
   # Links shown on the home page and footer. Leave blank to hide.
   email:
@@ -30,13 +30,11 @@ navigation:
   - title: Background
     url: /background/
 
-# Publication categories, in display order.
+# Publication categories, in display order (same groups as the CV).
 publication_categories:
-  conferences: Conference Papers
-  manuscripts: Journal Articles
-  demo/posters: Demos and Posters
+  conference: Conference Papers, Demos & Doctoral Consortium
   preprint: Preprints
-  books: Books
+  report: Workshop Proposals, Reports & Track Overviews
 
 collections:
   publications:

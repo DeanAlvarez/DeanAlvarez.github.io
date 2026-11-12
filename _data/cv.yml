@@ -1,0 +1,143 @@
+# Background page content, mirrored from the LaTeX CV (cv2/sections/*.tex).
+# Rendered by _pages/background.html in this order.
+#
+# Entry fields (all optional except title):
+#   title, when, org, where, note, bullets (Markdown allowed in note and bullets)
+# Sections with `compact: true` render each entry on one line (title ... when).
+
+- section: Education
+  entries:
+    - title: Ph.D. in Computer Science
+      when: 2023 – May 2029 (expected)
+      org: University of Illinois Urbana-Champaign
+      where: Urbana, IL
+      note: Advisor — Prof. [ChengXiang Zhai](https://czhai.cs.illinois.edu/)
+    - title: B.S. in Computer Science
+      when: May 2023
+      org: Cornell University
+      where: Ithaca, NY
+      note: _Cum laude_ with Honors in Computer Science · Minor in Philosophy · Humanities Scholar · LSAMP Scholar
+
+- section: Honors & Awards
+  compact: true
+  entries:
+    - title: "**NSF Graduate Research Fellowship** (GRFP)"
+      when: "2025"
+    - title: Dean's List, Cornell University
+      when: 2020 – 2023
+    - title: USGIF Scholarship
+      when: "2019"
+    - title: National Merit Scholar
+      when: "2018"
+
+- section: Research Experience
+  entries:
+    - title: Graduate Research Assistant
+      when: Jan 2024 – Present
+      org: University of Illinois Urbana-Champaign
+      where: Advisor — Prof. ChengXiang Zhai
+      note: "Hypergraph of Text: making any document collection navigable"
+      bullets:
+        - Proposed Hypergraph of Text (HoT), a mathematical structure for organizing and analyzing large text collections ([BigData 2024](/publication/HoT-poster-big-data))
+        - "Compared ways of constructing HoT, from classic term weighting to LLM-based and hybrid methods: TF-IDF proved highly competitive, while LLM and hybrid methods add benefits at substantially higher cost ([preprint](/publication/make-any-collection-navigable))"
+        - Built and open-sourced [TINK](https://github.com/TIMAN-group/TINK), an interactive toolkit for navigating collections with HoT, demonstrated at SIGIR 2025 ([demo](/publication/TINK-text-information-navigation-kit))
+        - Studying conversation-enhanced browsing over HoT; presented at the CHIIR 2026 Doctoral Consortium ([paper](/publication/CHIIR-2026-conversation-enhanced-browsing))
+    - title: SPI Fellow
+      when: May 2023 – Aug 2023
+      org: University of Illinois Urbana-Champaign
+      where: Advisor — Prof. Tandy Warnow
+      bullets:
+        - Benchmarked _k_-core and _k_-truss community search algorithms on large networks; presented at the Illinois Summer Research Symposium
+    - title: Undergraduate Researcher
+      when: Fall 2021 – Spring 2023
+      org: Cornell University
+      where: Advisor — Prof. Chris De Sa
+      bullets:
+        - Studied interpolative decomposition (ID) pruning for neural network compression, first for CNN transfer learning and then for transformers such as BERT; contributed to [STAT](/publication/STAT-shrinking-transformers-after-training)
+        - Explored Gibbs-sampling (MCMC) quantization of ResNets on CIFAR-10
+    - title: Senior Thesis, Humanities Scholars Program
+      when: Aug 2022 – May 2023
+      org: Cornell University
+      where: Advisor — Prof. Malte Ziewitz
+      bullets:
+        - Interviewed 10+ machine learning practitioners on how ethics is practiced in the tech industry; presented at the Cornell Humanities Scholars Research Conference
+
+- section: Service
+  entries:
+    - title: Co-Organizer, SIGIR 2026 Workshop on eCommerce (ECOM'26)
+      when: "2026"
+      bullets:
+        - Organized the workshop data challenge, extending the TREC Product Search track ([proposal](/publication/SIGIR-2026-ECOM-workshop))
+        - Reviewed workshop submissions
+    - title: Co-Organizer, TREC 2025 Product Search and Recommendation Track
+      when: "2025"
+      bullets:
+        - Built and documented the baselines for the product search task; presented the track overview at TREC 2025 ([overview](/publication/TREC-2025-product-search-overview))
+
+- section: Teaching Experience
+  entries:
+    - title: Teaching Assistant
+      when: Fall 2024, Spring 2025
+      org: University of Illinois Urbana-Champaign
+      note: "CS 410: Text Information Systems · CS 510: Advanced Information Retrieval"
+      bullets:
+        - Coordinated course projects for 100+ students per course, from proposal through final submission
+        - Held weekly office hours and supported students on the course forum
+    - title: Teaching Assistant
+      when: Fall 2022, Spring 2023
+      org: Cornell University
+      note: "CS 4780: Introduction to Machine Learning"
+      bullets:
+        - Helped design hands-on projects built on real-world ML problems
+        - Held office hours on assignments, debugging, and ML algorithms
+
+- section: Industry Experience
+  entries:
+    - title: Software Engineering Intern
+      when: Summer 2025
+      org: Talroo
+      where: Austin, TX
+      bullets:
+        - Built a distributed crawler (Apache Spark, Delta Lake) that extracts job postings from company career pages, with an adaptive HTTP → browser → LLM extraction pipeline; 18× faster than the previous system with 94% recall against manually verified job counts
+        - Trained a BERT classifier (96% F1) for job/non-job filtering to replace LLM calls, cutting projected API spend by more than 50%
+        - Coordinated LLM requests across providers with Redis-backed load balancing, eliminating rate-limit errors
+    - title: Software Engineering Intern, Core Data Infrastructure
+      when: Summer 2021
+      org: Asana
+      where: Remote
+      bullets:
+        - Validated the data quality and production safety of new event-logging code
+        - Built a dataset-size extractor for physical and external tables; prototyped logging for isolated Spark clusters
+    - title: STEP Intern
+      when: Summer 2020
+      org: Google
+      where: Remote
+      bullets:
+        - Built the backend for a feature that detects over- and under-provisioned access-management rules, parsing rules into ASTs
+        - Wrote an external sort for analyzing datasets too large to fit in memory
+    - title: Deep Learning Intern / Junior Research Scientist
+      when: Summers 2018, 2019
+      org: CACI International
+      where: Tampa, FL
+      bullets:
+        - Studied how class grouping affects object detector performance (SSD, Faster R-CNN, RetinaNet); built evaluation and low-shot learning tooling
+
+- section: Talks & Presentations
+  compact: true
+  entries:
+    - title: "An Exploration of Conversation Enhanced Browsing with Hypergraph of Text — _CHIIR 2026 Doctoral Consortium_"
+      when: Mar 2026
+    - title: "Overview of the TREC 2025 Product Search and Recommendation Track — _TREC 2025 (virtual)_"
+      when: Nov 2025
+    - title: "TINK: Text Information Navigation Kit — _SIGIR 2025 Demo Session_"
+      when: Jul 2025
+    - title: "Community Search in Large Networks: Evaluating the State of the Art — _Illinois Summer Research Symposium_"
+      when: Jul 2023
+    - title: "Exploring the Practice of Ethics by Machine Learning Practitioners in the Tech Industry — _Cornell Humanities Scholars Research Conference_ (senior thesis)"
+      when: May 2023
+
+- section: Skills
+  compact: true
+  entries:
+    - title: "**Languages** — Python, Java, C/C++, Scala"
+    - title: "**ML & Data** — PyTorch, NumPy, Apache Spark, Delta Lake, Redis, Docker"
