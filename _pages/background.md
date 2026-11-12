@@ -1,15 +1,10 @@
 ---
-layout: archive
 title: "Background"
 permalink: /background/
-author_profile: true
 redirect_from:
   - /resume
-  - /background
   - /cv
 ---
-
-{% include base_path %}
 
 ## Education
 

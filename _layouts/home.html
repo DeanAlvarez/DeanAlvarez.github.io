@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<section class="intro">
+  <h1>{{ site.author.name }}</h1>
+  <p class="intro-bio">
+    {{ site.author.bio }}{% if site.author.location %} · {{ site.author.location }}{% endif %}{% if site.author.pronouns %} · {{ site.author.pronouns }}{% endif %}
+  </p>
+  {% include links.html %}
+</section>
+
+<div class="prose">
+  {{ content }}
+</div>

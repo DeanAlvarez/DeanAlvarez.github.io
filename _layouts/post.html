@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<article class="page">
+  <h1 class="page-title">{{ page.title }}</h1>
+  {% assign words = content | number_of_words %}
+  <p class="page-meta">
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %-d, %Y' }}</time>
+    · {{ words | divided_by: 200 | at_least: 1 }} min read
+  </p>
+  <div class="prose">
+    {{ content }}
+  </div>
+</article>

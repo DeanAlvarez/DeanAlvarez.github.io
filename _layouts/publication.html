@@ -1,0 +1,27 @@
+---
+layout: default
+---
+{% capture me %}<strong>{{ site.author.short_name }}</strong>{% endcapture %}
+<article class="page">
+  <h1 class="page-title">{{ page.title }}</h1>
+  {% if page.authors %}<p class="pub-authors">{{ page.authors | replace: site.author.short_name, me }}</p>{% endif %}
+  <p class="page-meta">
+    {% if page.venue %}{{ page.venue }}{% endif %}
+    {% if page.paperurl %} · <a href="{{ page.paperurl }}">Paper</a>{% endif %}
+    {% if page.codeurl %} · <a href="{{ page.codeurl }}">Code</a>{% endif %}
+    {% if page.slidesurl %} · <a href="{{ page.slidesurl }}">Slides</a>{% endif %}
+  </p>
+
+  <div class="prose">
+    {% assign abstract = content | strip %}
+    {% if abstract != "" %}
+    <h2>Abstract</h2>
+    {{ content }}
+    {% endif %}
+
+    {% if page.citation %}
+    <h2>Citation</h2>
+    <p class="citation">{{ page.citation }}</p>
+    {% endif %}
+  </div>
+</article>

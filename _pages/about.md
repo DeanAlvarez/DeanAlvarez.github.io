@@ -1,8 +1,7 @@
 ---
-layout: about
+layout: home
 permalink: /
 title: "About"
-author_profile: true
 redirect_from: 
   - /about/
   - /about.html
@@ -26,6 +25,15 @@ I believe that the future of information access lies in **structured understandi
 <p>Spring 2025 - Supporting my research on "New Generation of Information Access via Intelligent Assistant"</p>
 </div>
 </div>
+
+## Recent Publications
+
+{% assign recent = site.publications | sort: 'date' | reverse %}
+<ul class="pub-list">
+{% for pub in recent limit: 3 %}{% include publication-entry.html pub=pub %}{% endfor %}
+</ul>
+
+[All publications →](/publications/)
 
 ## Beyond Research
 
