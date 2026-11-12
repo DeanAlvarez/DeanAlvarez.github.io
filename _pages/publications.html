@@ -2,17 +2,27 @@
 title: Publications
 permalink: /publications/
 ---
-{% if site.author.googlescholar %}
-<p>Also on <a href="{{ site.author.googlescholar }}">Google Scholar</a>.</p>
-{% endif %}
-
 {% assign pubs = site.publications | sort: 'date' | reverse %}
+
+<nav class="toc" aria-label="Sections">
+  {% for cat in site.publication_categories %}
+    {% assign in_cat = pubs | where: 'category', cat.id %}
+    {% if in_cat.size > 0 %}<a href="#{{ cat.id }}">{{ cat.short }} <span class="count">{{ in_cat.size }}</span></a>{% endif %}
+  {% endfor %}
+  {% if site.author.googlescholar %}<a href="{{ site.author.googlescholar }}">Google Scholar ↗</a>{% endif %}
+</nav>
+
 {% for cat in site.publication_categories %}
-  {% assign in_cat = pubs | where: 'category', cat[0] %}
+  {% assign in_cat = pubs | where: 'category', cat.id %}
   {% if in_cat.size > 0 %}
-  <h2>{{ cat[1] }}</h2>
-  <ul class="pub-list">
-    {% for pub in in_cat %}{% include publication-entry.html pub=pub %}{% endfor %}
-  </ul>
+  <section class="pub-section" id="{{ cat.id }}">
+    <h2>{{ cat.title }}</h2>
+    <ul class="pub-list">
+      {% for pub in in_cat %}
+        {% capture label %}{{ cat.prefix }}{{ forloop.rindex }}{% endcapture %}
+        {% include publication-entry.html pub=pub label=label %}
+      {% endfor %}
+    </ul>
+  </section>
   {% endif %}
 {% endfor %}

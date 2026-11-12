@@ -30,11 +30,20 @@ navigation:
   - title: Background
     url: /background/
 
-# Publication categories, in display order (same groups as the CV).
+# Publication categories, in display order (same groups and label prefixes as the CV).
 publication_categories:
-  conference: Conference Papers, Demos & Doctoral Consortium
-  preprint: Preprints
-  report: Workshop Proposals, Reports & Track Overviews
+  - id: conference
+    title: Conference Papers, Demos & Doctoral Consortium
+    short: Conference & Demos
+    prefix: C
+  - id: preprint
+    title: Preprints
+    short: Preprints
+    prefix: P
+  - id: report
+    title: Workshop Proposals, Reports & Track Overviews
+    short: Reports & Workshops
+    prefix: R
 
 collections:
   publications:

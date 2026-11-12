@@ -1,7 +1,10 @@
 {% assign pub = include.pub %}
 {% capture me %}<strong>{{ site.author.short_name }}</strong>{% endcapture %}
-<li class="pub">
+<li class="pub{% if include.label %} pub-labeled{% endif %}">
+  {% if include.label %}<span class="pub-label">{{ include.label }}</span>{% endif %}
+  <div>
   <a class="pub-title" href="{{ pub.url | relative_url }}">{{ pub.title }}</a>
   {% if pub.authors %}<div class="pub-authors">{{ pub.authors | replace: site.author.short_name, me }}</div>{% endif %}
   <div class="pub-meta">{% include publication-meta.html pub=pub %}</div>
+  </div>
 </li>

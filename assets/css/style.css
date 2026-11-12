@@ -196,6 +196,19 @@ th, td { padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--rule); text-alig
 /* ---------- Publications ---------- */
 .prose .pub-list, .pub-list { list-style: none; padding: 0; margin: 0; }
 .prose .pub-list > li { margin-block: 0 1.25rem; }
+.pub-labeled {
+  display: grid;
+  grid-template-columns: 2.25rem 1fr;
+  gap: 0 0.5rem;
+}
+.pub-label {
+  padding-top: 0.2em;
+  color: var(--accent);
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
 .pub-title { font-weight: 600; text-decoration: none; color: var(--text); }
 .pub-title:hover { color: var(--accent); }
 .pub-authors { color: var(--muted); font-size: 1rem; }
@@ -273,9 +286,18 @@ p.pub-authors { margin: 0 0 0.25rem; }
 }
 .toc a { color: var(--muted); text-decoration: none; }
 .toc a:hover { color: var(--accent); }
+.toc .count {
+  margin-left: 0.15em;
+  padding: 0 0.4em;
+  border-radius: 999px;
+  background: var(--surface);
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+}
 
-.cv-section { scroll-margin-top: 1rem; }
-.prose .cv-section h2 {
+.cv-section, .pub-section { scroll-margin-top: 1rem; }
+.prose .cv-section h2,
+.prose .pub-section h2 {
   margin-top: 2.75rem;
   padding-bottom: 0.35rem;
   border-bottom: 1px solid var(--rule);
