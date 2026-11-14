@@ -39,7 +39,7 @@
       note: "Hypergraph of Text: making any document collection navigable"
       bullets:
         - Proposed Hypergraph of Text (HoT), a mathematical structure for organizing and analyzing large text collections ([BigData 2024](/publication/HoT-poster-big-data))
-        - "Compared ways of constructing HoT, from classic term weighting to LLM-based and hybrid methods: TF-IDF proved highly competitive, while LLM and hybrid methods add benefits at substantially higher cost ([preprint](/publication/make-any-collection-navigable))"
+        - "Proposed and compared methods for constructing HoT, from classic term weighting to LLM-based methods, and a metric (effort ratio) for its structural quality: simple TF-IDF baselines can match LLM-based methods ([preprint](/publication/make-any-collection-navigable))"
         - Built and open-sourced [TINK](https://github.com/TIMAN-group/TINK), an interactive toolkit for navigating collections with HoT, demonstrated at SIGIR 2025 ([demo](/publication/TINK-text-information-navigation-kit))
         - Studying conversation-enhanced browsing over HoT; presented at the CHIIR 2026 Doctoral Consortium ([paper](/publication/CHIIR-2026-conversation-enhanced-browsing))
     - title: SPI Fellow

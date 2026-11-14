@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200" role="img" aria-labelledby="t">
+  <title id="t">Hypergraph of Text: documents (dots) grouped into overlapping, labeled topics</title>
+  <style>
+    .bg { fill: #f3f1ec; }
+    .e1 { fill: #1f5f8b; } .e2 { fill: #b0643a; } .e3 { fill: #4f7a3a; }
+    .edge { fill-opacity: .14; stroke-width: 1.5; stroke-opacity: .7; }
+    .e1.edge { stroke: #1f5f8b; } .e2.edge { stroke: #b0643a; } .e3.edge { stroke: #4f7a3a; }
+    .doc { fill: #1d1d1f; }
+    .lbl { font: 600 11px system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    .l1 { fill: #1f5f8b; } .l2 { fill: #b0643a; } .l3 { fill: #4f7a3a; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #1f2125; }
+      .e1, .l1 { fill: #7fb5dc; } .e2, .l2 { fill: #e0a07a; } .e3, .l3 { fill: #9cc583; }
+      .e1.edge { stroke: #7fb5dc; } .e2.edge { stroke: #e0a07a; } .e3.edge { stroke: #9cc583; }
+      .edge { fill-opacity: .16; }
+      .doc { fill: #e8e6e1; }
+    }
+  </style>
+  <rect class="bg" width="320" height="200"/>
+  <ellipse class="edge e1" cx="122" cy="88" rx="78" ry="50" transform="rotate(-12 122 88)"/>
+  <ellipse class="edge e2" cx="200" cy="86" rx="76" ry="48" transform="rotate(14 200 86)"/>
+  <ellipse class="edge e3" cx="160" cy="138" rx="86" ry="38"/>
+  <text class="lbl l1" x="40" y="40">Evaluation</text>
+  <text class="lbl l2" x="210" y="30">Recommendation</text>
+  <text class="lbl l3" x="128" y="192">Datasets</text>
+  <g class="doc">
+    <circle cx="72" cy="92" r="4"/>
+    <circle cx="96" cy="64" r="4"/>
+    <circle cx="112" cy="104" r="4"/>
+    <circle cx="140" cy="62" r="4"/>
+    <circle cx="160" cy="88" r="4"/>
+    <circle cx="160" cy="118" r="4"/>
+    <circle cx="186" cy="62" r="4"/>
+    <circle cx="214" cy="80" r="4"/>
+    <circle cx="246" cy="98" r="4"/>
+    <circle cx="204" cy="118" r="4"/>
+    <circle cx="120" cy="140" r="4"/>
+    <circle cx="96" cy="150" r="4"/>
+    <circle cx="190" cy="150" r="4"/>
+    <circle cx="226" cy="146" r="4"/>
+    <circle cx="248" cy="70" r="4"/>
+  </g>
+</svg>

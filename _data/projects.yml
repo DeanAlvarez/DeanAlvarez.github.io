@@ -1,0 +1,60 @@
+# Projects page and home-page cards, in display order.
+# Projects with `featured: true` also appear on the home page (keep it to two).
+#
+# Fields: name, subtitle (optional), description (Markdown), image, image_alt,
+#         links: list of {label, url}; the first link is styled as the primary button.
+#
+# Everything here must be traceable to a public paper, the TINK repo, or the MIAS demo.
+
+- name: MIAS
+  subtitle: Multistrategy Information Access System
+  featured: true
+  description: >-
+    Search, browsing, and chat over one collection, built on Hypergraph of Text.
+    The live demo lets you browse and search the SIGIR 2026 and JCDL 2026 proceedings:
+    start from a map of topics, move between overlapping groups of papers, and narrow
+    every view to the same working set.
+  image: /images/projects/mias.jpg
+  image_alt: The MIAS demo's overview of the JCDL 2026 proceedings, showing major themes, suggested starting papers, and easily missed outliers.
+  links:
+    - label: Live demo
+      url: https://iaaa.online
+
+- name: Hypergraph of Text
+  featured: true
+  description: >-
+    A structure for organizing any document collection so people and AI agents can browse it,
+    not only search it. Documents are nodes; labeled hyperedges are overlapping groups of
+    documents a reader can enter and move between. [MIAS](/projects/#mias) and [TINK](/projects/#tink) are built on it.
+  image: /images/projects/hot.svg
+  image_alt: Diagram of a Hypergraph of Text. Dots stand for documents; three overlapping labeled regions stand for topics, and documents in an overlap belong to more than one topic.
+  links:
+    - label: Paper (BigData 2024)
+      url: /publication/HoT-poster-big-data
+    - label: Construction & evaluation (arXiv)
+      url: /publication/make-any-collection-navigable
+    - label: Conversational browsing (CHIIR 2026)
+      url: /publication/CHIIR-2026-conversation-enhanced-browsing
+
+- name: TINK
+  subtitle: Text Information Navigation Kit
+  description: >-
+    An open-source Python toolkit that turns a document collection into a browsable
+    Hypergraph of Text with a web interface.
+  links:
+    - label: Code
+      url: https://github.com/TIMAN-group/TINK
+    - label: Paper (SIGIR 2025 demo)
+      url: /publication/TINK-text-information-navigation-kit
+    - label: Video
+      url: https://drive.google.com/file/d/1JS8zn3I-CGfT5petVB_DXVhEdOHyIys7/view?usp=sharing
+
+- name: TREC Product Search
+  description: >-
+    Co-organized the TREC 2025 Product Search and Recommendation track, building its product
+    search baselines, and the data challenge for the SIGIR 2026 Workshop on eCommerce (ECOM'26).
+  links:
+    - label: Track overview (arXiv)
+      url: https://arxiv.org/abs/2608.17138
+    - label: ECOM'26 workshop
+      url: /publication/SIGIR-2026-ECOM-workshop

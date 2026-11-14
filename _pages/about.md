@@ -7,23 +7,32 @@ redirect_from:
   - /about.html
 ---
 
-I'm a Ph.D. candidate in Computer Science at the University of Illinois Urbana-Champaign, advised by Professor [ChengXiang Zhai](https://czhai.cs.illinois.edu/).
+<p class="notice">I'm looking for a research internship for summer 2027.</p>
 
-I study how to make any document collection navigable. My work develops **Hypergraph of Text**, a structure that organizes a collection's content for browsing and analysis, together with methods for building it at scale and interfaces, including conversational ones, that help people explore and make sense of large text collections. More broadly, I work on information retrieval, information access, natural language processing, and product search.
+I'm a PhD student in Computer Science at the University of Illinois Urbana-Champaign, advised by [ChengXiang Zhai](https://czhai.cs.illinois.edu/), and an NSF Graduate Research Fellow. I study how to organize text collections so that people and AI agents can browse them, not only search them. My work centers on **Hypergraph of Text**, a structure for making any document collection navigable, along with methods for building it, ways of evaluating it, and interfaces for exploring it. I'm especially interested in scientific literature, where knowing you've seen everything relevant matters most.
 
-<!-- ## Research Vision
+## Projects
 
-I believe that the future of information access lies in **structured understanding** rather than just keyword matching. When we can represent the collective knowledge of humanity as an interconnected graph, we unlock new possibilities for:
+<div class="project-list">
+{% for p in site.data.projects %}{% if p.featured %}{% include project-card.html project=p %}{% endif %}{% endfor %}
+</div>
 
-- **Education**: Personalized learning paths through knowledge networks
-- **Research**: Accelerated discovery through intelligent literature navigation
-- **Decision Making**: Better insights through comprehensive information synthesis -->
+[All projects →](/projects/)
+
+## Selected Publications
+
+{% assign selected = site.publications | where: 'selected', true | sort: 'date' | reverse %}
+<ul class="pub-list">
+{% for pub in selected %}{% include publication-entry.html pub=pub %}{% endfor %}
+</ul>
+
+[All publications →](/publications/)
 
 ## Recent Highlights
 
 <div class="research-highlights">
 <div class="research-card">
-<h4>Co-organizing ECOM'26</h4>
+<h4>Co-organized ECOM'26</h4>
 <p>2026 · Organized the data challenge for the SIGIR 2026 Workshop on eCommerce, extending the TREC Product Search track.</p>
 </div>
 <div class="research-card">
@@ -40,15 +49,6 @@ I believe that the future of information access lies in **structured understandi
 </div>
 </div>
 
-## Selected Publications
-
-{% assign selected = site.publications | where: 'selected', true | sort: 'date' | reverse %}
-<ul class="pub-list">
-{% for pub in selected %}{% include publication-entry.html pub=pub %}{% endfor %}
-</ul>
-
-[All publications →](/publications/)
-
 ## Beyond Research
 
 Outside of research I enjoy reading, philosophy, listening to music, and strategy games.
@@ -56,6 +56,6 @@ Outside of research I enjoy reading, philosophy, listening to music, and strateg
 ---
 
 <div class="cta-section">
-<h3>Learn More</h3>
-<p>Interested in collaborating or learning more about my work? Check out my <a href="https://scholar.google.com/citations?user=WCSG8bwAAAAJ&hl=en">Google Scholar</a> for publications, or explore my <a href="/background/">Background</a> for a complete overview of my journey.</p>
+<h3>Learn more</h3>
+<p>{% if site.author.cv %}My <a href="{{ site.author.cv | relative_url }}">CV</a> has the full picture. {% endif %}You can find my papers on <a href="{{ site.author.googlescholar }}">Google Scholar</a> and more about my path on the <a href="/background/">Background</a> page.</p>
 </div>

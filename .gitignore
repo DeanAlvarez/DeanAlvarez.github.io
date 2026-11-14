@@ -16,3 +16,6 @@ _planning_and_notes/
 .jekyll-cache/
 .bundle/
 vendor/
+
+# Unapproved drafts: the repo is public, so keep these out of git until Dean approves them.
+_drafts/a-search-engine-is-a-kind-of-library.md
